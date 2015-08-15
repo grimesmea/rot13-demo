@@ -61,5 +61,6 @@ input[type="radio"] {
 	background-color: #fff;
 	font-size: 2em;
 	padding: 15px;
+	min-height: 37px;
 	text-align: left;
 }

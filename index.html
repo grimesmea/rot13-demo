@@ -25,15 +25,16 @@
 
 		<div class="container">
 			<form class="input-form">
-		     <input id="input-box" class="form-element" type="text" name="message" placeholder="Input Message">
-      <br>
-		     <input class="form-element" type="radio" name="coded-status" value="decode" checked>Decode</input>
-		     <input class="form-element" type="radio" name="coded-status" value="encode">Encode</input>
-		   </form>
+		     <input id="input-box" class="form-element" type="text" name="message" placeholder="Input Message" data-bind="value: input, valueUpdate: 'keyup'">
+		  </form>
 
-		   <div id="output-box">ffdsfd</div>
+			<h2>ROT13 Message</h2>
+
+		  <div id="output-box" data-bind="text: outputMessage"></div>
 	  </div>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>
